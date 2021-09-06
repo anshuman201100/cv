@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>contacts</title>
+  </head>
+  <body>
+    <p>U can contact me on</p>
+    <p>9113122506</p>
+<!--    <form action="/action_page.php">
+        <label for="name">Enter your name</label>
+        <br>
+      <input type ="text" id ="name" name="name">
+      <br>
+  <label for="emailid ">Enter your Email id</label>
+      <br>
+<input type="text" id  ="emailid"name ="name">
+</form>-->
+<!--<form action="/action_page.php"method ="post" id="form1">
+  <label for="name">Name</label>
+  <input type="text" id="name" name = "name">
+  <label for="email id">Email id</label>
+  <input type="text" id = "email id"name = "new name">
+  <button type = "submit" id = "form1" value = "submit" >submit</button>
+
+</form>-->
+<form method="post" action="./contacts0.html">
+  <!-- <label>Student Name * : </label> -->
+  <input type="text" placeholder="Enter Student Name" required name="studentName"/>
+  <input type="submit" value="submit" />
+  <h2>Do you want to accept this offer ?</h2>
+  <label for="yes">Yes</label>
+  <input type="checkbox" id="yes"/>
+  <label for="no">No</label>
+  <input type="checkbox" id="no"/>
+  <p id="6">
+hello
+  </p>
+  <select id="1">
+    <option value="">
+      Select state
+    </option>
+  </select>
+  <textarea rows="5" cols="18" name=""></textarea>
+</form>
+  </body>
+  <script type="text/javascript">
+    let stateName = {"Bihar":"Bihar","UP":"Uttar Pradesh","Delhi":"Delhi"};
+    let select = document.getElementById("1")
+    for(let state in stateName){
+      var opt = document.createElement('option');
+       opt.value = state;
+       opt.innerHTML = state;
+       select.appendChild(opt);
+    }
+
+  </script>
+</html>
